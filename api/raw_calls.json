@@ -1,0 +1,46 @@
+{
+    "auth": "oauth2_user",
+    "authentication_url": "https://accounts.google.com/o/oauth2/auth?access_type=offline&approval_prompt=force",
+    "calls": {
+        "AAC": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get Files",
+            "params": {
+                "AAD": {
+                    "key": "orderBy",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAE": {
+                    "key": "pageSize",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAF": {
+                    "key": "q",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAG": {
+                    "key": "spaces",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1525426707840x910405967468298200.plugin_api.AAC",
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Get File\",\"fields\":{\"_p_kind\":{\"ret_value\":\"text\",\"caption\":\"kind\",\"path\":[\"kind\"]},\"_p_nextPageToken\":{\"ret_value\":\"text\",\"caption\":\"nextPageToken\",\"path\":[\"nextPageToken\"]},\"_p_incompleteSearch\":{\"ret_value\":\"boolean\",\"caption\":\"incompleteSearch\",\"path\":[\"incompleteSearch\"]},\"_p_files\":{\"ret_value\":\"list.api.1525426707840x910405967468298200.plugin_api.AAC.files\",\"caption\":\"files\",\"path\":[\"files\"]}}},\"plugin_api.AAC.files\":{\"caption\":\"Get Files file\",\"fields\":{\"_p_kind\":{\"ret_value\":\"text\",\"caption\":\"kind\",\"path\":[\"kind\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]},\"_p_mimeType\":{\"ret_value\":\"text\",\"caption\":\"mimeType\",\"path\":[\"mimeType\"]}}}}",
+            "url": "https://www.googleapis.com/drive/v3/files"
+        }
+    },
+    "generate_token_from_code_uri": "https://www.googleapis.com/oauth2/v4/token",
+    "human": "Google Drive",
+    "oauth_user_data_call": "https://www.googleapis.com/oauth2/v1/userinfo?alt=json",
+    "scope": "https://www.googleapis.com/auth/drive.readonly https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
+}
